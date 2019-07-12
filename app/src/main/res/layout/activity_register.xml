@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logoapp"
+            />
+        <design.MyTextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#759E2D"
+            android:text="تسجيل حساب جديد "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/log2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/clint" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+
+                <design.MyEditText
+                    android:id="@+id/ent_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint="الاسم"
+                    android:inputType="textPersonName"
+                    android:maxLength="15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layoutDirection="rtl"
+                android:paddingTop="10dp"
+                android:elevation="8dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/log2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/phone"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+                <design.MyEditText
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/ent_phone"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:hint="رقم التلفون"
+                    android:maxLength="15"
+                    android:layoutDirection="rtl"
+                    android:inputType="phone"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layoutDirection="rtl"
+                android:elevation="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/log"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/placeholder"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+
+
+                <Spinner
+                    android:id="@+id/city_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:entries="@array/nationality">
+
+                </Spinner>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/log2"
+                android:layout_marginLeft="20dp"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/edit"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+                <design.MyEditText
+                    android:layout_marginLeft="15dp"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:hint="المنطقة"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layoutDirection="rtl"
+                >
+                <design.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="طريقة الدفع"
+                    android:textColor="#759E2D"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/NationsSearch"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/radio0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="بالفيزا" />
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="كاش" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/log2"
+                android:layout_marginLeft="20dp"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:elevation="8dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/lock"/>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+                <design.MyEditText
+                    android:layout_marginLeft="15dp"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pass_login"
+                    android:hint="كلمة المرور"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"                    />
+
+
+            </LinearLayout>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical"/>
+            <LinearLayout
+                android:id="@+id/Register"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="7dp"
+                android:background="@drawable/backgreen"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <design.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:gravity="center"
+                    android:text="  تسجيل جديد"
+                    android:textSize="18dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLogin"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_height="wrap_content">
+                <design.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="اذا كان لديك حساب بالفعل الرجاء "
+                    android:layout_marginTop="20dp"
+                    />
+                <design.MyTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/Login"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="تسجيل الدخول"
+                    android:textColor="#3EAECE"
+                    android:layout_marginTop="20dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

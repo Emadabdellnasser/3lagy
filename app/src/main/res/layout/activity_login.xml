@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c7c7"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/logoapp"
+            android:layout_marginTop="20dp"
+            />
+        <design.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل دخول"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#759E2D"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ground"
+            android:elevation="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+
+
+            >
+            <design.MyEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="رقم التليفون "
+                android:padding="10dp"
+                android:textColorHighlight="#fff"
+                android:textColor="#759E2D"
+                android:backgroundTint="#fff"
+                android:textColorHint="#759E2D"
+                android:inputType="textEmailAddress"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/TaskmasterSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ground"
+            android:elevation="8dp"
+            android:layoutDirection="rtl"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+
+
+            >
+            <design.MyEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:hint="الرقم السري"
+                android:backgroundTint="#fff"
+                android:padding="10dp"
+                android:inputType ="textPassword"
+                android:maxLines="1"
+                android:textColor="#759E2D"
+                android:textColorHint="#759E2D"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_height="wrap_content">
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="إذا لم يكن لك حساب بالفعل الرجاء "
+                android:layout_marginTop="20dp"
+                />
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/RegisterText"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=" التسجيل بالضغط هنا"
+                android:textColor="#3EAECE"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/backgreen"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:paddingRight="5dp"
+                android:id="@+id/loginLay"
+
+                >
+                <design.MyTextView
+                    android:id="@+id/loginBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#ffff"
+                    android:text="دخول"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="21dp"
+
+
+
+                    />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBarLogin"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

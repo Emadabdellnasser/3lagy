@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">3lagy</string>
+    <string-array name="nationality">
+        <item><FONT COLOR="#006600"> مصر</FONT></item>
+        <item><FONT COLOR="#006600"> مصر</FONT></item>
+        <item><FONT COLOR="#006600"> مصر</FONT></item>
+        <item><FONT COLOR="#006600"> مصر</FONT></item>
+    </string-array>
+    <string name="title_activity_my__orders">My_Orders</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

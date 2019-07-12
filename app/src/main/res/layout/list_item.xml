@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:background="@drawable/count"
+    android:padding="16dp"
+    android:scaleX=".9"
+    android:scaleY=".9">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <design.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="كونجستال -لورين أقراص"
+            android:textColor="#000"
+
+            android:textSize="22dp" />
+
+
+        <LinearLayout
+            android:id="@+id/Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backgreen"
+            android:elevation="7dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <design.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="صورة الروشتة"
+                android:textColor="#ffff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        >
+        <design.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="متوفر"
+            android:gravity="center"
+            android:textColor="#3EAECE"
+            android:textSize="16dp" />
+
+
+        <design.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26/2/2017"
+            android:textSize="16dp"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>
